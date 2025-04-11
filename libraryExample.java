@@ -64,12 +64,12 @@ class BookManager {
 			
 			try {
 				selectionLibrary.bookBooks(toBook);
-				System.out.println(toBook+ " books were placed in the " +selectionLibrary.getLibraryName()+ " Library.");
+				System.out.println(toBook+ " books were borrowed in the " +selectionLibrary.getLibraryName()+ " Library.");
 				remaining-=toBook;
 				
 			}catch (Exception e)  
 			{
-				System.out.println("erorrrrrr");
+				System.out.println("Sorry we don't have enough books to barrow");
 			}
 		}
 		
